@@ -1,0 +1,88 @@
+/* Clearfix */
+
+.clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+/* Magnific Popup Fade Animation */
+
+.mfp-fade {
+  &.mfp-bg {
+    opacity: 0;
+    transition: all 0.25s ease-in-out;
+    &.mfp-ready {
+      opacity: 0.8;
+    }
+    &.mfp-removing {
+      opacity: 0;
+    }
+  }
+  &.mfp-wrap {
+    .mfp-content {
+      opacity: 0;
+      transition: all 0.25s ease-in-out;
+    }
+    &.mfp-ready .mfp-content {
+      opacity: 1;
+    }
+    &.mfp-removing .mfp-content {
+      opacity: 0;
+    }
+  }
+}
+
+/* Responsive Embed */
+
+.embed-container {
+  height: 0;
+  overflow: hidden;
+  margin-bottom: $base-rhythm;
+  padding-bottom: 56.25%;
+  position: relative;
+  iframe,object,embed,video {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+/* Wordpress Core Image Alignment */
+
+.wrapper {
+  img {
+    margin-bottom: $base-rhythm;
+    &.alignright {
+      float: right;
+      margin: 0 0 1em 1em;
+    }
+    &.alignleft {
+      float: left;
+      margin: 0 1em 1em 0;
+    }
+    &.aligncenter {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .alignright {
+    float: right;
+  }
+  .alignleft {
+    float: left;
+  }
+  .aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

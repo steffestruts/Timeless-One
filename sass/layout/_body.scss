@@ -1,0 +1,19 @@
+*,
+*:before,
+*::after {
+  box-sizing: inherit;
+}
+
+:focus {
+  outline: 1px solid $dodger-blue;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  color: lighten($outer-space, 10%);
+  font: 400 1em/#{$base-rhythm} $main-font;
+}

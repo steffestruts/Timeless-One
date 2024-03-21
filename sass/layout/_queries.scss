@@ -1,0 +1,23 @@
+@include bp-small {
+
+  html {
+    font-size: 17px;
+  }
+
+}
+
+@include bp-medium {
+
+  html {
+    font-size: 18px;
+  }
+
+}
+
+@include bp-large {
+
+  html {
+    font-size: 19px;
+  }
+
+}
